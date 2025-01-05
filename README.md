@@ -63,6 +63,27 @@ Refer to the [Git documentation](https://git-scm.com/ "Git documentation") for f
 | **`git init`**        | Initialise a new Git repo in the current location. Before running `git init`, use `git status` to ensure you are not currently inside an existing repo.                                                                                                    |
 | **`git clone <url>`** | Retrieve all the files associated with the repository and copy them to your local machine. This initialises a new Git repository on your machine and gives you access to the full history of the project. Ensure you are not inside a repo when you clone. |
 
+### Configuring
+
+| Command                                               | Description                                                                                                                                                            |
+| ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`git config --global user.name “My Name”`**         | Set your username in Git.                                                                                                                                              |
+| **`git config --global user.email myname@email.com`** | Set your email in Git.                                                                                                                                                 |
+| **`git config user.name`**                            | Check what your username is set as.                                                                                                                                    |
+| **`git config user.email`**                           | Check what your email is set as.                                                                                                                                       |
+| **`git config --global core.editor "code --wait"`**   | Set VS code as the default editor. In VS code, you may need to enter `command` `shift` `P` and select `Install ‘code’ command in Path` for the default editor to work. |
+
+### Committing
+
+| Command                          | Description                                                                                         |
+| -------------------------------- | --------------------------------------------------------------------------------------------------- |
+| **`git add <file1> <file2>`**    | Add the file to the staging area ready to commit.                                                   |
+| **`git add .`**                  | Stage all changes at once.                                                                          |
+| **`git commit -m “message”`**    | Commit the change and create a checkpoint that includes your message.                               |
+| **`git commit`**                 | Commit the change and create a checkpoint. Your default editor opens for you to write your message. |
+| **`git commit -a -m “message”`** | Add and commit at the same time.                                                                    |
+| **`git commit --amend`**         | Amend the previous commit. Change the message or include files you forgot to commit.                |
+
 ### Table template
 
 | Command | Description |
