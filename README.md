@@ -44,3 +44,26 @@ Refer to the [Git documentation](https://git-scm.com/ "Git documentation") for f
 | **`mkdir <name>`**               | Create a new directory with the selected name in the current location. You can make multiple directories like with the touch command.    |
 | **`rm <file.ext>`**              | Delete the selected file. You can delete multiple files like the touch command.                                                          |
 | **`rm -rf <directory>`**         | Delete the selected directory.                                                                                                           |
+
+## Git commands
+
+### Status
+
+| Command                 | Description                                                                         |
+| ----------------------- | ----------------------------------------------------------------------------------- |
+| **`git status`**        | Check the status of the current repo.                                               |
+| **`git log`**           | View the details of all the commits in the current repo. Enter `q` to exit the log. |
+| **`git log --oneline`** | Display abbreviated details of all the commits.                                     |
+| **`git --version`**     | Check the Git version installed.                                                    |
+
+### Initialising
+
+| Command               | Description                                                                                                                                                                                                                                                |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`git init`**        | Initialise a new Git repo in the current location. Before running `git init`, use `git status` to ensure you are not currently inside an existing repo.                                                                                                    |
+| **`git clone <url>`** | Retrieve all the files associated with the repository and copy them to your local machine. This initialises a new Git repository on your machine and gives you access to the full history of the project. Ensure you are not inside a repo when you clone. |
+
+### Table template
+
+| Command | Description |
+| ------- | ----------- |
