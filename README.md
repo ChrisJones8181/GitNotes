@@ -4,7 +4,7 @@ This README contains useful commands and notes from [The Git & GitHub Bootcamp b
 
 ## Git
 
-Git is a version control system that that tracks and manages changes to files over time. It allows you to:
+Git is a version control system that tracks and manages changes to files over time. It allows you to:
 
 - Track changes over multiple files
 - Compare versions of a project
@@ -83,6 +83,25 @@ Refer to the [Git documentation](https://git-scm.com/ "Git documentation") for f
 | **`git commit`**                 | Commit the change and create a checkpoint. Your default editor opens for you to write your message. |
 | **`git commit -a -m “message”`** | Add and commit at the same time.                                                                    |
 | **`git commit --amend`**         | Amend the previous commit. Change the message or include files you forgot to commit.                |
+
+### Branching
+
+| Command                          | Description                                                                                                              |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| **`git branch`**                 | View all the branches in the project. The active branch is marked with an asterisk. Enter `q` to exit the branch window. |
+| **`git branch <branchName>`**    | Create the new named branch based upon the current HEAD. You will not switch to the new branch.                          |
+| **`git switch <branchName>`**    | Switch to the named branch.                                                                                              |
+| **`git checkout <branchName>`**  | Switch to the named branch. Not commonly used anymore.                                                                   |
+| **`git switch -c <branchName>`** | Create the new named branch and switch to it at the same time.                                                           |
+| **`git branch -d <branchName>`** | Delete the named branch. You can’t be on the branch you want to delete.                                                  |
+| **`git branch -m <branchName>`** | Rename the branch you are on.                                                                                            |
+| **`git branch -v`**              | View all branches with the latest commit information.                                                                    |
+
+### Merging
+
+| Command                      | Description                                                                                                                                                                                                                                                                                  |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`git merge <branchName>`** | Merge the named branch into the current branch you are on. Fast forward merges require no message, merge commits require a message to be entered. If there are conflicts, resolve the conflicts in the file, remove the conflict markers in the file, add your changes, and make the commit. |
 
 ### Table template
 
