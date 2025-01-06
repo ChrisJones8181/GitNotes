@@ -103,6 +103,30 @@ Refer to the [Git documentation](https://git-scm.com/ "Git documentation") for f
 | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **`git merge <branchName>`** | Merge the named branch into the current branch you are on. Fast forward merges require no message, merge commits require a message to be entered. If there are conflicts, resolve the conflicts in the file, remove the conflict markers in the file, add your changes, and make the commit. |
 
+### Using diff
+
+| Command                                            | Description                                                                                                              |
+| -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| **`git diff`**                                     | List all the changes in your working directory that are not staged for a commit.                                         |
+| **`git diff HEAD`**                                | List all the changes in your working directory since your last commit (staged and un-staged changes).                    |
+| **`git diff --staged`** or **`git diff --cached`** | List all the staged changes in your working directory.                                                                   |
+| **`git diff HEAD <filename>`**                     | List all the changes in your working directory since your last commit (staged and un-staged changes) for the named file. |
+| **`git diff --staged <filename>`**                 | List all the staged changes in your working directory for the named file.                                                |
+| **`git diff <branch1>..<branch2>`**                | List the changes between the tips of branch1 and branch2.                                                                |
+| **`git diff <commit1>..<commit2>`**                | List the changes between commit1 and commit2. Requires the commit hashes.                                                |
+
+### Stashing
+
+| Command                         | Description                                                                                    |
+| ------------------------------- | ---------------------------------------------------------------------------------------------- |
+| **`git stash`**                 | Stash all uncommitted changes (staged and un-staged) and revert changes in your working copy.  |
+| **`git stash pop`**             | Remove the most recently stashed changes in your stash and re-apply them to your working copy. |
+| **`git stash apply`**           | Keep the most recently stashed changes in your stash and re-apply them to your working copy.   |
+| **`git stash list`**            | View what’s in your stash.                                                                     |
+| **`git stash apply stash@{n}`** | Keep the stashed changes in your stash and re-apply the selected stash to your working copy.   |
+| **`git stash drop stash@{n}`**  | Delete the selected stash.                                                                     |
+| **`git stash clear`**           | Delete everything in the stash.                                                                |
+
 ### Table template
 
 | Command | Description |
