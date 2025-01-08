@@ -189,6 +189,39 @@ Major releases are significant changes that are not backwards compatible. Minor 
 | **`git push <remoteName> <tagName>`**   | Push the specified tag to the remote.                                                                                                                                                                                                        |
 | **`git push <remoteName> --tags`**      | Push all tags to the remote.                                                                                                                                                                                                                 |
 
+### Using reflogs
+
+Reference logs are stored locally and only for 90 days by default.
+
+| Command                                              | Description                                                                                                                                                                                                                                                             |
+| ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`git reflog show <reference>`**                    | Show the log of the specified reference (this defaults to HEAD).                                                                                                                                                                                                        |
+| **`git reflog <name>@{qualifier}`**                  | Show the log of the specified reference. For example, use the command `git reflog main@{one.week.ago}` to see the relevant log.                                                                                                                                         |
+| **`git checkout <name>@{qualifier}`**                | Checkout at the specified reference. For example, use the command `git checkout main@{one.week.ago}` to checkout the main branch from a week ago.                                                                                                                       |
+| **`git diff <name>@{qualifier} <name>@{qualifier}`** | Show the differences in the files between the two references.                                                                                                                                                                                                           |
+| **`git reset --hard <name>@{qualifier}`**            | Use this if you want to recover a commit you have deleted or rebased for a branch. You can also specify the hash value instead of the name and qualifier. The reflog is useful in this situation because it stores records of commits even after you have deleted them. |
+
+## Using aliases
+
+Enter aliases in the global `.gitconfig` file to apply them to all repos.
+
+For example, to make the command `git s` run `git status`, enter the following:
+
+```
+[alias]
+    s = status
+```
+
+| Command                                  | Description                                                                                |
+| ---------------------------------------- | ------------------------------------------------------------------------------------------ |
+| **`git config --global alias.s status`** | Using the terminal instead of editing the file, make the command `git s` run `git status`. |
+
+Useful aliases:
+
+- [GitAlias](https://github.com/GitAlias/gitalias "GitAlias")
+
+- [Must Have Git Aliases](https://www.durdn.com/blog/2012/11/22/must-have-git-aliases-advanced-examples/ "Must Have Git Aliases")
+
 ### Table template
 
 | Command | Description |
