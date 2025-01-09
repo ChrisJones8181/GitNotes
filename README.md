@@ -253,7 +253,18 @@ These commands are listed here for interest and understanding how Git works, the
 | **`git cat-file -p <hash>`**                           | Display the data stored for the hash.                                                                                            |
 | **`git cat-file -t <hash>`**                           | Display the type of data stored for the hash.                                                                                    |
 
-### Table template
+## Atomic commits
 
-| Command | Description |
-| ------- | ----------- |
+Try to keep your commits focussed on a single thing, feature, or fix. This makes it easier to undo or rollback changes later and makes code easier to review.
+
+## Gitignore
+
+Create a `.gitignore` file in the root directory and list files and folders that shouldn’t be tracked. For example, `.DS_Store`, API key files, and dependency folders like `node_modules/`. Recommended files to ignore can be generated [here](https://www.toptal.com/developers/gitignore "Gitignore").
+
+## VIM
+
+| Command   | Description                                                                     |
+| --------- | ------------------------------------------------------------------------------- |
+| **`:q`**  | Quit Vim.                                                                       |
+| **`i`**   | Enter insert mode and type a message. Use the `Escape` key to exit insert mode. |
+| **`:wq`** | Write and quit.                                                                 |
