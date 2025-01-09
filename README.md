@@ -222,6 +222,37 @@ Useful aliases:
 
 - [Must Have Git Aliases](https://www.durdn.com/blog/2012/11/22/must-have-git-aliases-advanced-examples/ "Must Have Git Aliases")
 
+## Exercises
+
+If your Git skills are a bit rusty, here’s the list of exercises from the course to practice:
+
+- [Committing Basics Exercise](https://plum-poppy-0ea.notion.site/Committing-Basics-Exercise-3dc1ef1873ce45e68cedd2265710d7d8 "Committing Basics Exercise")
+
+- [Branching Exercise](https://plum-poppy-0ea.notion.site/Branching-Exercise-b5460c881d56400cb046357d9a430bf8 "Branching Exercise")
+
+- [Merging Exercise](https://plum-poppy-0ea.notion.site/Git-Merging-Exercise-0236a17f04c847159a38f5efa978ce2c "Merging Exercise")
+
+- [Diff Exercise](https://plum-poppy-0ea.notion.site/Git-Diff-Exercise-f7829bd2783940cea14239022a6c37a9 "Diff Exercise")
+
+- [Stashing Exercise](https://plum-poppy-0ea.notion.site/Stashing-Exercise-b6b4ac460c0a4798845de177fc1eb86d "Stashing Exercise")
+
+- [Undoing Things Exercise](https://plum-poppy-0ea.notion.site/Undoing-Things-Exercise-d2fc1825dcc047c291a9a960848fdf71 "Undoing Things Exercise")
+
+- [GitHub Basics Exercise](https://plum-poppy-0ea.notion.site/Github-Basics-Exercise-1c12200326db47d7890702017602d698 "GitHub Basics Exercise")
+
+## Hashing
+
+These commands are listed here for interest and understanding how Git works, they are not commonly used.
+
+| Command                                                | Description                                                                                                                      |
+| ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
+| **`git hash-object <filename>`**                       | Return the unique SHA-1 hash that refers to the data object. Nothing is stored by this command.                                  |
+| **`echo “<string>” <pipe> git hash-object --stdin`**   | Return the unique SHA-1 hash that refers to the string specified between the quotation marks. Nothing is stored by this command. |
+| **`echo “<string>” <pipe> git hash-object –stdin -w`** | Return the unique SHA-1 hash that refers to the string specified between the quotation marks and store it in the objects folder. |
+| **`git hash-object <filename> -w`**                    | Hash and store the file in the objects folder.                                                                                   |
+| **`git cat-file -p <hash>`**                           | Display the data stored for the hash.                                                                                            |
+| **`git cat-file -t <hash>`**                           | Display the type of data stored for the hash.                                                                                    |
+
 ### Table template
 
 | Command | Description |
