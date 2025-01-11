@@ -261,7 +261,9 @@ Try to keep your commits focussed on a single thing, feature, or fix. This makes
 
 Create a `.gitignore` file in the root directory and list files and folders that shouldn’t be tracked. For example, `.DS_Store`, API key files, and dependency folders like `node_modules/`. Recommended files to ignore can be generated [here](https://www.toptal.com/developers/gitignore "Gitignore").
 
-## VIM
+## Vim
+
+You may need to use the Vim editor when working with Git. Here's some useful commands.
 
 | Command   | Description                                                                     |
 | --------- | ------------------------------------------------------------------------------- |
