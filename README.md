@@ -222,6 +222,10 @@ Useful aliases:
 
 - [Must Have Git Aliases](https://www.durdn.com/blog/2012/11/22/must-have-git-aliases-advanced-examples/ "Must Have Git Aliases")
 
+## Git process diagram
+
+![Process](https://github.com/ChrisJones8181/GitNotes/blob/image/images/GitProcess.png)
+
 ## Exercises
 
 If your Git skills are a bit rusty, here’s the list of exercises from the course to practice:
@@ -270,7 +274,3 @@ You may need to use the Vim editor when working with Git. Here's some useful com
 | **`:q`**  | Quit Vim.                                                                       |
 | **`i`**   | Enter insert mode and type a message. Use the `Escape` key to exit insert mode. |
 | **`:wq`** | Write and quit.                                                                 |
-
-## Image
-
-![Process](https://github.com/ChrisJones8181/GitNotes/blob/image/images/GitProcess.png)
