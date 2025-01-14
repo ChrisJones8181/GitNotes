@@ -270,3 +270,7 @@ You may need to use the Vim editor when working with Git. Here's some useful com
 | **`:q`**  | Quit Vim.                                                                       |
 | **`i`**   | Enter insert mode and type a message. Use the `Escape` key to exit insert mode. |
 | **`:wq`** | Write and quit.                                                                 |
+
+## Image
+
+![Process](https://github.com/ChrisJones8181/GitNotes/blob/image/images/GitProcess.png)
