@@ -274,3 +274,10 @@ You may need to use the Vim editor when working with Git. Here's some useful com
 | **`:q`**  | Quit Vim.                                                                       |
 | **`i`**   | Enter insert mode and type a message. Use the `Escape` key to exit insert mode. |
 | **`:wq`** | Write and quit.                                                                 |
+
+## READMEs
+
+Useful information for making README.md files:
+
+- [Markdown-it demo](https://markdown-it.github.io/ "Markdown-it demo")
+- [Markdown examples](https://gist.github.com/cseeman/8f3bfaec084c5c4259626ddd9e516c61 "Markdown examples")
