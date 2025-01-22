@@ -166,8 +166,7 @@ Refer to the [Git documentation](https://git-scm.com/ "Git documentation") for f
 | **`git rebase <branchName>`** | Rewrite commit history to move your current branch so that it begins at the tip of a specified branch. For example, move your feature branch so that it begins at the tip of the master branch. This is useful if you must keep merging the latest master branch commits into your feature branch and clutter it with merge commits. This can be used as an alternative to merging or as a clean-up tool. It will turn muddled commits between two branches into a simple linear set of commits. |
 | **`git rebase -i HEAD~<n>`**  | Enter interactive mode and recreate commits in the specified range. You can edit commits, add files, drop commits, and so on. This does not rebase the commits onto another branch. Instead, it rebases them onto the HEAD they are currently based on.                                                                                                                                                                                                                                          |
 
-> [!WARNING]
-> **Never rebase commits that have been shared with others. If you’ve already pushed commits to a remote, don’t rebase them.**
+> [!WARNING] > **Never rebase commits that have been shared with others. If you’ve already pushed commits to a remote, don’t rebase them.**
 
 ### Using tags
 
@@ -227,7 +226,7 @@ Useful aliases:
 
 ## Git process diagram
 
-![Process](https://github.com/ChrisJones8181/GitNotes/blob/image/images/GitProcess.png)
+![Process](https://github.com/ChrisJones8181/GitNotes/blob/master/images/GitProcess.png)
 
 ## Exercises
 
